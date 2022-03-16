@@ -16,16 +16,16 @@ internal class Program
 
      Employee employee = new Employee();
         
-        employee.PrintPromotedEmployee(employeesList, Promot);
+        employee.PrintPromotedEmployee(employeesList, e => e.Experience > 5 );
 
     }
-    public static bool Promot(Employee emp)
-    {
-          if(emp.Experience > 5)
-            {
-                return true;
-            }
+    //public static bool Promot(Employee emp)
+    //{
+    //      if(emp.Experience > 5)
+    //        {
+    //            return true;
+    //        }
                
-              return false; 
-    }
+    //          return false; 
+    //}
 }

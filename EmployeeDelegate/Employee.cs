@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EmployeeDelegate
 { 
-    delegate bool PromotDelegate(Employee emp);
+    //delegate bool PromotDelegate(Employee emp);
     
     internal class Employee
     {
@@ -24,8 +24,10 @@ namespace EmployeeDelegate
         //    this.Experience = experience;
         //    this.Salary = salary;
         //}
-   
-        public void PrintPromotedEmployee(List<Employee> employees, PromotDelegate promoted)
+
+       
+
+        public void PrintPromotedEmployee(List<Employee> employees, Func<Employee, bool> promoted)
         {
             
             foreach (var employee in employees)
